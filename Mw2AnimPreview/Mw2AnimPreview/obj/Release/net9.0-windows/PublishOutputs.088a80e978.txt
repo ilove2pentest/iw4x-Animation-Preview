@@ -1,0 +1,5 @@
+C:\Mw2AnimPreview\Mw2AnimPreview.exe
+C:\Mw2AnimPreview\Mw2AnimPreview.dll
+C:\Mw2AnimPreview\Mw2AnimPreview.deps.json
+C:\Mw2AnimPreview\Mw2AnimPreview.runtimeconfig.json
+C:\Mw2AnimPreview\Mw2AnimPreview.pdb

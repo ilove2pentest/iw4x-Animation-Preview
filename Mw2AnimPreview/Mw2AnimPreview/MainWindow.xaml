@@ -1,0 +1,26 @@
+﻿<Window x:Class="VideoPlayerApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Video Player" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="274"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <!-- Left side: List of names -->
+        <ListBox x:Name="NamesListBox" Grid.Column="0" Margin="10,10,10,10"
+                 SelectionChanged="NamesListBox_SelectionChanged">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}" FontSize="16" Padding="5"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <!-- Right side: Video player -->
+        <MediaElement x:Name="VideoPlayer" Grid.Column="1" Margin="10,10,10,10"
+                      LoadedBehavior="Manual" UnloadedBehavior="Stop"
+                      MediaEnded="VideoPlayer_MediaEnded"/>
+    </Grid>
+</Window>
